@@ -1,0 +1,12 @@
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Suite" >
+	<test name="firstTest">
+	<classes>
+		<class name="demotestngproject.FirstTest"/>
+		</classes>
+		</test>
+		</suite>
+
+ 
