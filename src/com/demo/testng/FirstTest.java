@@ -1,6 +1,4 @@
-package demotestngproject;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+package com.demo.testng;
 
 import org.apache.commons.lang3.tuple.Pair;
 import org.openqa.selenium.By;
@@ -15,23 +13,34 @@ import java.time.Duration;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
-//import org.testng.annotations.Optional;
-//import org.testng.annotations.Parameters;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class FirstTest {
+public class FirstTest extends BaseTest {
+	
+	@BeforeMethod
+	@Parameters(value={"baseUrl", "userName", "password"})
+	public void setup(String baseUrl, String userName, String password) {
+		super.setup(baseUrl, userName, password);
+	}
 
-	String baseUrl = "https://www.amazon.in/ ";
 
 	@Test
-	public void SearchProduct() throws InterruptedException {
+	public void testSearchProduct() throws InterruptedException {
+		
+		loginStep();
+		
+		searchProduct();
+		
+		logoutStep();
 
-		WebDriverManager.firefoxdriver().setup();
-		WebDriver driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(baseUrl);
+	}
+	
+	private void searchProduct() {
+		
+		new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		String searchString = "Sandisk SSD";
 
@@ -44,35 +53,34 @@ public class FirstTest {
 
 		String resultSelector = ".s-result-list > :is(.s-result-item):not(.s-result-item.AdHolder)[data-component-type='s-search-result']";
 
-		driver.manage().window().maximize();
-
 		WebElement matchedResult = driver.findElement(By.cssSelector(resultSelector));
 		String firstItem = matchedResult.getAttribute("data-asin");
 		WebElement matchedLink = matchedResult.findElement(By.cssSelector("a.a-link-normal.a-text-normal"));
 		// Assert.assertTrue(matchedLink.findElement(By.cssSelector("span.a-text-normal")).getText().matches("(?i).*"
 		// + searchString + ".*"));
+		
+		String productUrl = matchedLink.getAttribute("href");
 
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", matchedResult);
 
 		WebDriverWait itemIntoViewWait = new WebDriverWait(driver, Duration.ofMillis(2000));
 		itemIntoViewWait.until(ExpectedConditions.visibilityOf(matchedResult));
 
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", matchedLink);
+		//((JavascriptExecutor) driver).executeScript("arguments[0].click();", matchedLink);
+		driver.navigate().to(productUrl);
 
-		new WebDriverWait(driver, Duration.ofMillis(2000));
-
-		Set<String> handles = driver.getWindowHandles();
-
-		String recentTab = handles.stream().skip(handles.size() - 1).findFirst().get();
-		driver.switchTo().window(recentTab);
-
-		new WebDriverWait(driver, Duration.ofMillis(5000));
+		/*
+		 * Set<String> handles = driver.getWindowHandles();
+		 * 
+		 * String recentTab = handles.stream().skip(handles.size() -
+		 * 1).findFirst().get(); driver.switchTo().window(recentTab);
+		 * 
+		 * new WebDriverWait(driver, Duration.ofMillis(5000));
+		 */
 
 		WebElement spanAddToCart = driver.findElement(By.cssSelector("form#addToCart input#add-to-cart-button"));
 
 		spanAddToCart.click();
-
-		new WebDriverWait(driver, Duration.ofMillis(1000));
 
 		WebElement cartProductLink = driver
 				.findElement(By.cssSelector("div#add-to-cart-confirmation-image a.sc-product-link"));
@@ -112,7 +120,6 @@ public class FirstTest {
 
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", compareItemAddToCart);
 
-		new WebDriverWait(driver, Duration.ofMillis(2000));
 
 		WebElement goToCart = driver.findElement(By.cssSelector("span#sw-gtc a.a-button-text"));
 		goToCart.click();
@@ -129,10 +136,6 @@ public class FirstTest {
 							"div.sc-item-content-group div.a-row.sc-action-links span.sc-action-delete input.a-color-link"))
 							.click();
 				});
-
-
-		driver.quit();
-
 	}
 
 	private Pair<Integer, String> extractCssByRating(WebElement td) {
@@ -141,4 +144,5 @@ public class FirstTest {
 		Integer reviewCount = Integer.valueOf(content.substring(content.indexOf("(") + 1, content.indexOf(")")));
 		return Pair.of(reviewCount, dynamicClass);
 	}
+	
 }

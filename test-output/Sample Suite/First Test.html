@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  firstTest</title>
+<title>TestNG:  First Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>firstTest</h2><table border='1' align="center">
+<h2 align='center'>First Test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 05 22:09:57 EET 2023</td>
+<td>Started on:</td><td>Sun Mar 05 23:06:04 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7965 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17355 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.demo.testng.FirstTest.testSearchProduct()'><b>testSearchProduct</b><br>Test class: com.demo.testng.FirstTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .nav-action-button .nav-action-inner
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: div#add-to-cart-confirmation-image a.sc-product-link
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9c63deb9-0d3f-4328-822e-f9d91b7863b6, findElement {using=css selector, value=.nav-action-button .nav-action-inner}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:39695, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14344, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39695/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9c63deb9-0d3f-4328-822e-f9d91b7863b6
+Command: [86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0, findElement {using=css selector, value=div#add-to-cart-confirmation-image a.sc-product-link}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:43432, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8680, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43432/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -95,18 +95,18 @@ Session ID: 9c63deb9-0d3f-4328-822e-f9d91b7863b6
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at com.demo.testng.BaseTest.loginStep(BaseTest.java:44)
-	at com.demo.testng.FirstTest.testSearchProduct(FirstTest.java:25)
+	at com.demo.testng.FirstTest.searchProduct(FirstTest.java:86)
+	at com.demo.testng.FirstTest.testSearchProduct(FirstTest.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1586289269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1586289269'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .nav-action-button .nav-action-inner
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1544031987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1544031987'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: div#add-to-cart-confirmation-image a.sc-product-link
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9c63deb9-0d3f-4328-822e-f9d91b7863b6, findElement {using=css selector, value=.nav-action-button .nav-action-inner}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:39695, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14344, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39695/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9c63deb9-0d3f-4328-822e-f9d91b7863b6
+Command: [86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0, findElement {using=css selector, value=div#add-to-cart-confirmation-image a.sc-product-link}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:43432, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8680, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43432/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -123,8 +123,8 @@ Session ID: 9c63deb9-0d3f-4328-822e-f9d91b7863b6
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at com.demo.testng.BaseTest.loginStep(BaseTest.java:44)
-	at com.demo.testng.FirstTest.testSearchProduct(FirstTest.java:25)
+	at com.demo.testng.FirstTest.searchProduct(FirstTest.java:86)
+	at com.demo.testng.FirstTest.testSearchProduct(FirstTest.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,8 +154,8 @@ Session ID: 9c63deb9-0d3f-4328-822e-f9d91b7863b6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.demo.testng.FirstTest@1f0f1111</td></tr>
+<td>11</td>
+<td>com.demo.testng.FirstTest@2b6faea6</td></tr>
 </table><p>
 </body>
 </html>

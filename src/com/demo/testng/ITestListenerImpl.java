@@ -1,7 +1,10 @@
-package demotestngproject;
+package com.demo.testng;
 
 import org.testng.ITestListener;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.testng.ITestResult;
 import org.testng.Assert;
 import org.testng.ITestContext;
@@ -15,7 +18,7 @@ public class ITestListenerImpl implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext Result) {
-
+		WebDriverManager.firefoxdriver().setup();
 	}
 
 

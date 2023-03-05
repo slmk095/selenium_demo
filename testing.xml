@@ -2,11 +2,14 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sample Suite" >
-	<test name="firstTest">
-	<classes>
-		<class name="demotestngproject.FirstTest"/>
+	<test name="First Test">
+		<parameter name="baseUrl" value="https://www.amazon.in/"></parameter>
+		<parameter name="userName" value="dagepi2827@wiroute.com"></parameter>
+		<parameter name="password" value="password12"></parameter>
+		<classes>
+			<class name="com.demo.testng.FirstTest"/>
 		</classes>
-		</test>
-		</suite>
+	</test>
+</suite>
 
  
