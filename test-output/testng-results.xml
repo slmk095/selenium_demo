@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-05T23:06:04 EET" name="Sample Suite" finished-at="2023-03-05T23:06:22 EET" duration-ms="17355">
+  <suite started-at="2023-03-17T17:36:53 EET" name="Sample Suite" finished-at="2023-03-17T17:37:59 EET" duration-ms="66408">
     <groups>
     </groups>
-    <test started-at="2023-03-05T23:06:04 EET" name="First Test" finished-at="2023-03-05T23:06:22 EET" duration-ms="17355">
+    <test started-at="2023-03-17T17:36:53 EET" name="First Test" finished-at="2023-03-17T17:37:59 EET" duration-ms="66408">
       <class name="com.demo.testng.FirstTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demo.testng.FirstTest@2b6faea6]" started-at="2023-03-05T23:06:05 EET" name="setup" finished-at="2023-03-05T23:06:10 EET" duration-ms="5132" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demo.testng.FirstTest@2b6faea6]" started-at="2023-03-17T17:36:54 EET" name="setup" finished-at="2023-03-17T17:37:00 EET" duration-ms="6263" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,27 +28,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSearchProduct()[pri:0, instance:com.demo.testng.FirstTest@2b6faea6]" started-at="2023-03-05T23:06:10 EET" name="testSearchProduct" finished-at="2023-03-05T23:06:22 EET" duration-ms="11376" status="FAIL">
+        <test-method signature="testSearchProduct()[pri:0, instance:com.demo.testng.FirstTest@2b6faea6]" started-at="2023-03-17T17:37:00 EET" name="testSearchProduct" finished-at="2023-03-17T17:37:59 EET" duration-ms="59229" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: div#add-to-cart-confirmation-image a.sc-product-link
+              <![CDATA[Unable to locate element: span#sw-gtc a.a-button-text
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0, findElement {using=css selector, value=div#add-to-cart-confirmation-image a.sc-product-link}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:43432, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8680, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43432/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0]]>
+Command: [27694569-5b8a-43ea-8c71-df2396328e66, findElement {using=css selector, value=span#sw-gtc a.a-button-text}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:48319, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19600, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:48319/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 27694569-5b8a-43ea-8c71-df2396328e66]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: div#add-to-cart-confirmation-image a.sc-product-link
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: span#sw-gtc a.a-button-text
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0, findElement {using=css selector, value=div#add-to-cart-confirmation-image a.sc-product-link}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:43432, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8680, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43432/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0
+Command: [27694569-5b8a-43ea-8c71-df2396328e66, findElement {using=css selector, value=span#sw-gtc a.a-button-text}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:48319, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19600, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:48319/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 27694569-5b8a-43ea-8c71-df2396328e66
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -65,7 +65,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at com.demo.testng.FirstTest.searchProduct(FirstTest.java:86)
+at com.demo.testng.FirstTest.searchProduct(FirstTest.java:126)
 at com.demo.testng.FirstTest.testSearchProduct(FirstTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)

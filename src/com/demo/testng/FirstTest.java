@@ -82,6 +82,8 @@ public class FirstTest extends BaseTest {
 
 		spanAddToCart.click();
 
+		
+
 		WebElement cartProductLink = driver
 				.findElement(By.cssSelector("div#add-to-cart-confirmation-image a.sc-product-link"));
 

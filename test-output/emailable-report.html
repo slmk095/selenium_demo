@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Sample Suite</th></tr>
-<tr><td><a href="#t0">First Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17 355</td><td></td><td></td></tr>
+<tr><td><a href="#t0">First Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">66 408</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">First Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.demo.testng.FirstTest</td><td><a href="#m0">testSearchProduct</a></td><td rowspan="1">1678050370695</td><td rowspan="1">11376</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">First Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.demo.testng.FirstTest</td><td><a href="#m0">testSearchProduct</a></td><td rowspan="1">1679067420643</td><td rowspan="1">59229</td></tr></tbody>
 </table>
-<h2>First Test</h2><h3 id="m0">com.demo.testng.FirstTest#testSearchProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: div#add-to-cart-confirmation-image a.sc-product-link
+<h2>First Test</h2><h3 id="m0">com.demo.testng.FirstTest#testSearchProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: span#sw-gtc a.a-button-text
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0, findElement {using=css selector, value=div#add-to-cart-confirmation-image a.sc-product-link}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:debuggerAddress: 127.0.0.1:43432, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8680, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43432/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0
+Command: [27694569-5b8a-43ea-8c71-df2396328e66, findElement {using=css selector, value=span#sw-gtc a.a-button-text}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:48319, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19600, moz:profile: C:\Users\slmk\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:48319/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 27694569-5b8a-43ea-8c71-df2396328e66
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -32,7 +32,7 @@ Session ID: 86fa2a78-89dc-47c4-8aeb-5a6cdbf76df0
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at com.demo.testng.FirstTest.searchProduct(FirstTest.java:86)
+	at com.demo.testng.FirstTest.searchProduct(FirstTest.java:126)
 	at com.demo.testng.FirstTest.testSearchProduct(FirstTest.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
